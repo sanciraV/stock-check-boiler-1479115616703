@@ -1,0 +1,10 @@
+applications:
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: stock-check-boiler
+  host: stock-check-boiler
+  disk_quota: 1024M
+  services:
+  - stock-check-boiler-cloudantNoSQLDB
